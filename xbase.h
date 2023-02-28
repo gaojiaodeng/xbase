@@ -1207,7 +1207,8 @@ extern "C"
 #else
     #define xdbg(...)         void(0)
     #define xdbg_info(...)    void(0)
-    #define xinfo(...)        xwrite_log(__MODULE__,enum_xlog_level_info,__VA_ARGS__)
+    #define xinfo(...)        void(0)
+    // #define xinfo(...)        xwrite_log(__MODULE__,enum_xlog_level_info,__VA_ARGS__)
     #define xkinfo(...)       xwrite_log(__MODULE__,enum_xlog_level_key_info,__VA_ARGS__)
     #define xwarn(...)        xwrite_log(__MODULE__,enum_xlog_level_warn,__VA_ARGS__)
     #define xerror(...)       xwrite_log(__MODULE__,enum_xlog_level_error,__VA_ARGS__)
